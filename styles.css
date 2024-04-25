@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Shadows+Into+Light&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family:"DM Sans", sans-serif;
+
+}
+
+
+
+.logo-navbar {
+
+    width: 7em;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo-navbar:hover {
+
+    transform: scale(1.2) rotateZ(-10deg);
+
+}
+
+#button-navbar {
+
+    background-color: #c8a17c;
+    transition: all 0.3s ease-in-out;
+}
+
+#button-navbar:hover {
+
+    background-color: #e09249;
+    border: 1px solid black;
+    transform: translateY(-6px);
+
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.all-content {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 6em;
+    margin-top: 15em;
+
+    grid-template-areas: 'video1 text1'
+                         'text2 video2'
+                         'video3 text3'
+                         'text4 video4';
+}
+
+video {
+
+    width: 18em;
+    height: auto;
+    
+}
+
+
+.video1 {
+
+    grid-area: video1;
+
+}
+
+.text1 {
+
+    grid-area: text1;
+    
+}
+
+.video2 {
+
+    grid-area: video2;
+    background-color: #c8a17c;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
+
+}
+
+.text2 {
+
+    grid-area: text2;
+    background-color: #c8a17c;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+}
+
+#title-middle {
+
+    color: white;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 6em;
+
+}
+
+#content-middle {
+
+    color: white;
+
+}
+
+.video3 {
+
+    grid-area: video3;
+
+}
+
+.text3 {
+
+    grid-area: text3;
+
+}
+
+.video4 {
+
+    grid-area: video4;
+    background-color: #c8a17c;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+}
+
+.text4 {
+
+    grid-area: text4;
+    background-color: #c8a17c;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-top-left-radius: 4em;
+    border-bottom-left-radius: 4em;
+
+}
+
+#logo-footer {
+
+    width: 7em;
+    height: auto;
+
+}
+
+
+
+/*-------------------------GENERAL---------------------*/
+
+
+
+.title {
+
+    font-size: 4em;
+    color: #c8a17c;
+
+}
+
+.content {
+
+    color: #c9a584;
+
+}
+
+.video1,
+.video2,
+.video3,
+.video4 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.text1,
+.text2,
+.text3,
+.text4 {
+
+    padding: 2em 2em;
+    text-align: center;
+    align-content: center;
+
+}
+
+
+
+/*-----------------------------------MEDIA QUIERIES-------------------------------*/
+
+@media (max-width: 790px) {
+    
+    .all-content {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 8);
+        margin-top: 11em;
+        row-gap: 0;
+        grid-template-areas: 'video1'
+                             'text1'
+                             'video2'
+                             'text2 '
+                             'video3'
+                             'text3'
+                             'video4'
+                             'text4' ;
+    }
+
+    video {
+
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .video2 {
+
+        border-top-left-radius: 3em;
+        border-top-right-radius: 3em;
+        border-bottom-right-radius: 0;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .text2 {
+
+        
+        padding-bottom: 6em;
+        border-bottom-left-radius: 3em;
+        border-bottom-right-radius: 3em;
+        margin-bottom: 3em;
+    
+    }
+
+    .video1,
+    .video3 {
+
+        margin-bottom: 3em;
+
+    }
+
+    .text1 {
+
+        margin-bottom: 9em;
+        text-align: start;
+
+    }
+
+    .text3 {
+
+        margin-bottom: 9em;
+        text-align: end;
+    }
+
+    .video4 {
+
+        border-top-left-radius: 3em;
+        border-top-right-radius: 3em;
+        border-bottom-right-radius: 0;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .text4 {
+
+        
+        padding-bottom: 6em;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 3em;
+        border-bottom-right-radius: 3em;
+        margin-bottom: 3em;
+    
+    }
+
+
+
+
+
+}
+
+
+
+
+
